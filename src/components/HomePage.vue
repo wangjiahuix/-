@@ -28,7 +28,7 @@
           <div class="x">
             <label class="custom-checkbox">
               <input type="checkbox" name="option" value="1" onchange="toggleCheck(this)">
-              <span class="checkmark"></span>
+              <div class="checkmark"></div>
             </label>
             我已阅读并同意<a href="#">服务协议</a>和<a href="#">隐私政策</a>
           </div>
@@ -97,7 +97,7 @@ input {
 
 .x {
   margin-top: 1vw;
-  margin-left: -10vw;
+  margin-left: -5vw;
   font-size: 1vw;
 }
 
@@ -112,7 +112,7 @@ input[type="checkbox"] {
 
 /* 自定义复选框的样式 */
 .custom-checkbox {
-  position: relative;
+  position: absolute;
   padding-left: 35px;
   cursor: pointer;
   display: inline-block;
@@ -122,9 +122,9 @@ input[type="checkbox"] {
 
 /* 自定义正方形的样式 */
 .custom-checkbox .checkmark {
-  position: absolute;
-  top: -0.8vw;
-  left: 3.5vw;
+  position: relative;
+  top: 0.2vw;
+  left: -5vw;
   height: 1vw;
   width: 1vw;
   background-color :white;
