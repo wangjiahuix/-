@@ -18,7 +18,7 @@ const handleClick = () => {
     .post("https://gitee.com/oauth/token", giteedata.value)
     .then((res) => {
       if (res.data.access_token != "") {
-        router.push("/ware");
+        router.push("/test");
       } else {
         console.log("登录出现错误");
       }

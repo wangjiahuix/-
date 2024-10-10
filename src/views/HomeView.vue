@@ -24,7 +24,7 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
   console.log(tab, event);
 };
 const tz = () => {
-  window.location.href = "/ware";
+  window.location.href = "/test";
 };
 </script>
 
