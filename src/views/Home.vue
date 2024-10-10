@@ -5,11 +5,11 @@ import axios from "axios";
 const router = useRouter();
 const giteedata = ref({
   grant_type: "password",
-  username: "17671862628",
+  username: "1808200572@qq.com",
   password: "CPZW18872689076",
-  client_id: "8eb46d21e6fc14cdf6100547705fe70fc7309ca9981e784e3661be23c3d92093",
+  client_id: "1329c377a227fb1d028261bde08b7b79f34587547ead7da6790ca15dfa310870",
   client_secret:
-    "043c00a83b6ac233704f76a266e756963dfea6bfb99e6e6360b79a8320013262",
+    "685fa2cd8820dbb85688b5c17564cbc8d10aa10cd48ab93f8afaea3b8f43182c",
   scope:
     "user_info projects pull_requests issues notes keys hook groups gists enterprises",
 });
@@ -18,7 +18,7 @@ const handleClick = () => {
     .post("https://gitee.com/oauth/token", giteedata.value)
     .then((res) => {
       if (res.data.access_token != "") {
-        router.push("/CodePage");
+        router.push("/HomeView");
       } else {
         console.log("登录出现错误");
       }
