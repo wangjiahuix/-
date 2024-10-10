@@ -12,10 +12,11 @@
     "await-to-js": "^3.0.0",
     "axios": "^1.7.7",
     "element-plus": "^2.8.4",
+    "element-ui": "^2.15.14",
     "request": "^2.88.2",
     "vant": "^4.9.7",
     "vue": "^3.4.29",
-    "vue-router": "^4.3.3"
+    "vue-router": "^4.4.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",
